@@ -11,12 +11,6 @@ const (
 	Draw     = "draw"
 )
 
-var scores = map[string]int{
-	Rock:     1,
-	Paper:    2,
-	Scissors: 3,
-}
-
 func init() {
 	rootCmd.AddCommand(d2p1)
 	rootCmd.AddCommand(d2p2)
