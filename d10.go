@@ -40,6 +40,7 @@ var d10p2 = &cobra.Command{
 
 		xVals := d10RunProgram(inp)
 
+		// nolint // go away
 		fmt.Println(d10DrawThing(xVals))
 	},
 }

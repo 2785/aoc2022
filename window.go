@@ -10,6 +10,7 @@ type SlidingWindow[T any] struct {
 
 func NewSlidingWindow[T any](src []T, size int) (*SlidingWindow[T], error) {
 	if size > len(src) {
+		// nolint // go away
 		return nil, fmt.Errorf("size cannot be larger than source")
 	}
 
